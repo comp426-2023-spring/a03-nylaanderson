@@ -38,8 +38,7 @@ if (args.r || args.rules) {
 
 if(args._.length > 1) {
 	console.error("Arguements are out of range.")
-	console.log(`Rules for the Lizard-Spock Expansion of Rock Paper Scissors:
-  	- Scissors CUTS Paper
+	console.log(`Rules for the Lizard-Spock Expansion of Rock Paper Scissors:  		- Scissors CUTS Paper
   	- Paper COVERS Rock
   	- Rock SMOOSHES Lizard
   	- Lizard POISONS Spock
@@ -74,7 +73,8 @@ else{
          Acceptable arguments: rock | paper | scissors | lizard | spock
          `);
 		console.log(
-	`- Scissors CUTS Paper
+	`Rules for the Lizard-Spock Expansion of Rock Paper Scissors:
+	- Scissors CUTS Paper
   	- Paper COVERS Rock
   	- Rock SMOOSHES Lizard
   	- Lizard POISONS Spock
