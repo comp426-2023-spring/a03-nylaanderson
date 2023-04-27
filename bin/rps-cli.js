@@ -47,5 +47,24 @@ if (args._.length > 1) {
   	node-rps rock   Return JSON with results for RPS played against a simulated opponent.
                   e.g {"player":"rock","opponent":"scissors","result":"win"}`);
 	process.exit(0);
+} 
+else if (args._.length === 0) {
+	console.log(JSON.stringify(rpsls.rpsStd()));
 }
-	
+else { 
+	let player_choice = args._[0].toLowerCase();
+	if (rpsls.rps_choices.includes(player_choice)) {
+		console.log(JSON.stringify(rpsls.rps(player_choice)))
+	}
+	else {
+		console.error(` Invalid argument.
+         Acceptable arguments: rock | paper | scissors
+         `);
+		console.log(
+	`Rules for Rock Paper Scissors:
+	- Scissors CUTS Paper
+	- Paper COVERS Rock
+	- Rock CRUSHES Scissors          
+	`);
+	}	
+}	
