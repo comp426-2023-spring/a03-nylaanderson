@@ -61,7 +61,7 @@ if(args._.length > 1) {
 	);
 	process.exit(0);
 }
-else if (args._.length ==== 0) {
+else if (args._.length === 0) {
 	console.log(JSON.stringify(rpsls.rpslsStd()));
 }
 else{
